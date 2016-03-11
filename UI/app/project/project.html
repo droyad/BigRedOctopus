@@ -1,0 +1,12 @@
+<h1>Project</h1>
+<div class="md-warn" ng-show="vm.noEndpoint">
+    Set an <a ui-sref="layout.connection">Octopus Connection</a> first
+</div>
+<div class="md-warn" ng-show="vm.endpointError">
+    {{ vm.endpointError}}
+</div>
+{{ vm.projects }}
+<md-input-container class="md-block">
+    <label>Endpoint</label>
+    <input type="text" ng-model="vm.endpoint" required>
+</md-input-container>
